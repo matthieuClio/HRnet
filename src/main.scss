@@ -1,0 +1,30 @@
+/* Fonts */
+@font-face {
+    font-family: 'Roboto';
+    src: local("Roboto-Regular.ttf"),
+    url("./assets/Roboto-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* - General rules - */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 17px;
+}

@@ -1,0 +1,70 @@
+/* Variables */
+$createEmployeeBackground: #2C2C2C;
+$createEmployeeColor: #FFFFFF;
+$createEmployeeSecondaryTitleBorder: #FFFFFF;
+$createEmployeeButtonSubmitBackground: #4B7BFF;
+$createEmployeeButtonSubmitColor: #FFFFFF;
+
+/* Create employee page */
+.create-employee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 40px;
+    width: 320px;
+    color: $createEmployeeColor;
+    background-color: $createEmployeeBackground;
+    border-radius: 5px;
+
+    &__primary-title {
+        margin-bottom: 20px;
+    }
+
+    &__link {
+        margin-bottom: 20px;
+    }
+
+    &__secondary-title {
+        padding: 10px 0 10px 0;
+        margin-bottom: 10px;
+        border-top: 2px solid $createEmployeeSecondaryTitleBorder;
+        border-bottom: 2px solid $createEmployeeSecondaryTitleBorder;
+    }
+
+    &__form {
+
+        &__tertiary-title {
+            padding-bottom: 5px;
+        }
+
+        &__button-submit {
+            background-color: $createEmployeeButtonSubmitBackground;
+            color: $createEmployeeButtonSubmitColor;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    }
+}
+
+/* Factored */
+.create-employee-label {
+    display: inline-block;
+}
+
+.create-employee-input {
+    display: block;
+    margin-bottom: 20px;
+    padding: 8px;
+    width: 90%;
+}
+
+.create-employee-width-100 {
+    width: 100%;
+}
+
+.create-employee-cursor-pointer {
+    cursor: pointer;
+}
