@@ -12,57 +12,61 @@ export default function CreateEmployee () {
             </h2>
 
             <form className="create-employee__form">
-                <label className="create-employee-label">
+                <label htmlFor="firstname" className="create-employee-label">
                     First Name
                 </label>
-                <input type="text" placeholder="First Name" className="create-employee-input" />
+                <input type="text" id="firstname" placeholder="First Name" className="create-employee-input" />
 
-                <label className="create-employee-label">
+                <label htmlFor="lastname" className="create-employee-label">
                     Last Name
                 </label>
-                <input type="text" placeholder="Last Name" className="create-employee-input" />
+                <input type="text" id="lastname" placeholder="Last Name" className="create-employee-input" />
 
-                <label className="create-employee-label">
+                <label htmlFor="birthDate" className="create-employee-label">
                     Date of Birth
                 </label>
-                <input type="date" className="create-employee-input" />
+                <input type="date" id="birthDate" className="create-employee-input" />
 
-                <label className="create-employee-label">
+                <label htmlFor="startDate" className="create-employee-label">
                     Start Date
                 </label>
-                <input type="date" className="create-employee-input" />
+                <input type="date" id="startDate" className="create-employee-input" />
 
                 <h3 className="create-employee__form__tertiary-title">
                     Address :
                 </h3>
 
-                <label className="create-employee-label">
+                <label htmlFor="street" className="create-employee-label">
                     Street
                 </label>
-                <input type="text" placeholder="Street name" className="create-employee-input" />
+                <input type="text" id="street" placeholder="Street name" className="create-employee-input" />
 
-                <label className="create-employee-label">
+                <label htmlFor="city" className="create-employee-label">
                     City
                 </label>
-                <input type="text" placeholder="City" className="create-employee-input" />
+                <input type="text" id="city" placeholder="City" className="create-employee-input" />
 
-                <label className="create-employee-label">
+                <label htmlFor="state" className="create-employee-label">
                     State
                 </label>
-                <select className="create-employee-input create-employee-width-100 create-employee-cursor-pointer">
-                    <option>Numéro 1</option>
+                <select id="state" className="create-employee-input create-employee-width-100 create-employee-cursor-pointer">
+                    <option>State 1</option>
                 </select>
                 
-                <label className="create-employee-label">
+                <label htmlFor="zipCode" className="create-employee-label">
                     Zip Code
                 </label>
-                <input type="number" placeholder="Zip Code" className="create-employee-input" />
+                <input type="number" id="zipCode" placeholder="Zip Code" className="create-employee-input" />
 
-                <label className="create-employee-label">
+                <label htmlFor="department" className="create-employee-label">
                     Department
                 </label>
-                <select className="create-employee-input create-employee-width-100 create-employee-cursor-pointer">
-                    <option>Numéro 1</option>
+                <select id="department" className="create-employee-input create-employee-width-100 create-employee-cursor-pointer">
+                    <option>Sales</option>
+                    <option>Marketing</option>
+                    <option>Engineering</option>
+                    <option>Human Resources</option>
+                    <option>Legal</option>
                 </select>
 
                 <button type="submit" className="create-employee__form__button-submit create-employee-width-100 create-employee-cursor-pointer">
