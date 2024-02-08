@@ -4,6 +4,7 @@ $createEmployeeColor: #FFFFFF;
 $createEmployeeSecondaryTitleBorder: #FFFFFF;
 $createEmployeeButtonSubmitBackground: #4B7BFF;
 $createEmployeeButtonSubmitColor: #FFFFFF;
+$createEmployeeLink: #4B7BFF;
 
 /* Create employee page */
 .create-employee {
@@ -24,6 +25,7 @@ $createEmployeeButtonSubmitColor: #FFFFFF;
     }
 
     &__link {
+        color: $createEmployeeButtonSubmitBackground;
         margin-bottom: 20px;
     }
 
@@ -31,7 +33,6 @@ $createEmployeeButtonSubmitColor: #FFFFFF;
         padding: 10px 0 10px 0;
         margin-bottom: 10px;
         border-top: 2px solid $createEmployeeSecondaryTitleBorder;
-        border-bottom: 2px solid $createEmployeeSecondaryTitleBorder;
     }
 
     &__form {
@@ -43,13 +44,13 @@ $createEmployeeButtonSubmitColor: #FFFFFF;
         &__button-submit {
             background-color: $createEmployeeButtonSubmitBackground;
             color: $createEmployeeButtonSubmitColor;
-            padding: 10px;
+            padding: 12px;
             border-radius: 10px;
         }
     }
 }
 
-/* Factored */
+/* Factored */  
 .create-employee-label {
     display: inline-block;
 }

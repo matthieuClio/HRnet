@@ -7,6 +7,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 // Page component
 import CreateEmployee from './page/CreateEmployee';
+import EmployeeList from './page/EmployeeList';
 
 // Style
 import './main.scss';
@@ -16,7 +17,11 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <CreateEmployee />,
-    errorElement: 'Error !'
+    errorElement: 'Error !',
+  },
+  {
+    path: '/list',
+    element: <EmployeeList />
   }
 ]);
 

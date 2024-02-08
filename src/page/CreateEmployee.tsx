@@ -1,12 +1,18 @@
+// React router
+import { Link } from 'react-router-dom';
+
+// Style
 import './createEmployee.scss';
 
 export default function CreateEmployee () {
     return (
         <section className="create-employee">
             <h1 className="create-employee__primary-title">HRnet</h1>
-            <a className="create-employee__link">
+
+            <Link to="list" className="create-employee__link">
                 View Current Employees
-            </a>
+            </Link>
+
             <h2 className="create-employee__secondary-title">
                 Create Employee
             </h2>
