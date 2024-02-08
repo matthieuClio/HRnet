@@ -1,8 +1,25 @@
 // React router
 import { Link } from 'react-router-dom';
 
+// Component
+import DateInput from '../components/DateInput';
+
 // Style
 import './createEmployee.scss';
+
+// For DateInput component
+const dateInformations = {
+
+    birthday: {
+        id: 'birthDate',
+        label: 'Date of Birth'
+    },
+
+    start: {
+        id: 'startDate',
+        label: 'Start Date'
+    }
+}
 
 export default function CreateEmployee () {
     return (
@@ -28,15 +45,14 @@ export default function CreateEmployee () {
                 </label>
                 <input type="text" id="lastname" placeholder="Last Name" className="create-employee-input" />
 
-                <label htmlFor="birthDate" className="create-employee-label">
-                    Date of Birth
-                </label>
-                <input type="date" id="birthDate" className="create-employee-input" />
+                {/* Date component */}
+                <DateInput textLabel={dateInformations.birthday.label} idInput={dateInformations.birthday.id} />
+                <DateInput textLabel={dateInformations.start.label} idInput={dateInformations.start.id} />
 
-                <label htmlFor="startDate" className="create-employee-label">
+                {/* <label htmlFor="startDate" className="create-employee-label">
                     Start Date
                 </label>
-                <input type="date" id="startDate" className="create-employee-input" />
+                <input type="date" id="startDate" className="create-employee-input" /> */}
 
                 <h3 className="create-employee__form__tertiary-title">
                     Address :
