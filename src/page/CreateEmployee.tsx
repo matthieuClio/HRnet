@@ -9,16 +9,8 @@ import './createEmployee.scss';
 
 // For DateInput component
 const dateInformations = {
-
-    birthday: {
-        id: 'birthDate',
-        label: 'Date of Birth'
-    },
-
-    start: {
-        id: 'startDate',
-        label: 'Start Date'
-    }
+    birthdayId: 'birthDate',
+    startId: 'startDate'
 }
 
 export default function CreateEmployee () {
@@ -46,13 +38,15 @@ export default function CreateEmployee () {
                 <input type="text" id="lastname" placeholder="Last Name" className="create-employee-input" />
 
                 {/* Date component */}
-                <DateInput textLabel={dateInformations.birthday.label} idInput={dateInformations.birthday.id} />
-                <DateInput textLabel={dateInformations.start.label} idInput={dateInformations.start.id} />
+                <label htmlFor={dateInformations.birthdayId} className="create-employee-label">
+                    Date of Birth
+                </label>
+                <DateInput idInput={dateInformations.birthdayId} />
 
-                {/* <label htmlFor="startDate" className="create-employee-label">
+                <label htmlFor={dateInformations.startId} className="create-employee-label">
                     Start Date
                 </label>
-                <input type="date" id="startDate" className="create-employee-input" /> */}
+                <DateInput idInput={dateInformations.startId} />
 
                 <h3 className="create-employee__form__tertiary-title">
                     Address :
@@ -72,6 +66,8 @@ export default function CreateEmployee () {
                     State
                 </label>
                 <select id="state" className="create-employee-input create-employee-width-100 create-employee-cursor-pointer">
+                    <option>State 1</option>
+                    <option>State 1</option>
                     <option>State 1</option>
                 </select>
                 
