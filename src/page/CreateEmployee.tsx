@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 
 // Component
 import DateInput from '../components/DateInput';
+import SelectOption from '../components/SelectOption';
+
+// Scripts
+import { selectStateData, selectDepartmentData } from '../scripts/selectData';
 
 // Style
 import './createEmployee.scss';
@@ -12,6 +16,12 @@ const dateInformations = {
     birthdayId: 'birthDate',
     startId: 'startDate'
 }
+
+// function handleSubmit (event) {
+//     event.preventDefault();
+//     const infoUser = new FormData(event.target);
+//     console.log(infoUser.get("select-state"));
+// }
 
 export default function CreateEmployee () {
     return (
@@ -37,15 +47,16 @@ export default function CreateEmployee () {
                 </label>
                 <input type="text" id="lastname" placeholder="Last Name" className="create-employee-input" />
 
-                {/* Date component */}
                 <label htmlFor={dateInformations.birthdayId} className="create-employee-label">
                     Date of Birth
                 </label>
+                {/* DateInput component */}
                 <DateInput idInput={dateInformations.birthdayId} />
 
                 <label htmlFor={dateInformations.startId} className="create-employee-label">
                     Start Date
                 </label>
+                {/* DateInput component */}
                 <DateInput idInput={dateInformations.startId} />
 
                 <h3 className="create-employee__form__tertiary-title">
@@ -65,12 +76,9 @@ export default function CreateEmployee () {
                 <label htmlFor="state" className="create-employee-label">
                     State
                 </label>
-                <select id="state" className="create-employee-input create-employee-width-100 create-employee-cursor-pointer">
-                    <option>State 1</option>
-                    <option>State 1</option>
-                    <option>State 1</option>
-                </select>
-                
+                {/* SelectOption component */}
+                <SelectOption selectName="select-state" selectId="state" optionData={selectStateData} />
+
                 <label htmlFor="zipCode" className="create-employee-label">
                     Zip Code
                 </label>
@@ -79,13 +87,8 @@ export default function CreateEmployee () {
                 <label htmlFor="department" className="create-employee-label">
                     Department
                 </label>
-                <select id="department" className="create-employee-input create-employee-width-100 create-employee-cursor-pointer">
-                    <option>Sales</option>
-                    <option>Marketing</option>
-                    <option>Engineering</option>
-                    <option>Human Resources</option>
-                    <option>Legal</option>
-                </select>
+                {/* SelectOption component */}
+                <SelectOption selectName="select-department" selectId="department" optionData={selectDepartmentData} />
 
                 <button type="submit" className="create-employee__form__button-submit create-employee-width-100 create-employee-cursor-pointer">
                     Save

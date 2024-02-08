@@ -1,4 +1,27 @@
-export const selectStates = [
+export const selectDepartmentData = [
+    {
+        "name": "Sales",
+        "abbreviation": "Sales"
+    },
+    {
+        "name": "Marketing",
+        "abbreviation": "Marketing"
+    },
+    {
+        "name": "Engineering",
+        "abbreviation": "Engineering"
+    },
+    {
+        "name": "Human Resources",
+        "abbreviation": "Human Resources"
+    },
+    {
+        "name": "Legal",
+        "abbreviation": "Legal"
+    },
+];
+
+export const selectStateData = [
     {
         "name": "Alabama",
         "abbreviation": "AL"
