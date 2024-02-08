@@ -4,7 +4,7 @@ $createEmployeeColor: #FFFFFF;
 $createEmployeeSecondaryTitleBorder: #FFFFFF;
 $createEmployeeButtonSubmitBackground: #4B7BFF;
 $createEmployeeButtonSubmitColor: #FFFFFF;
-$createEmployeeLink: #4B7BFF;
+$createEmployeeLinkColor: #4B7BFF;
 
 /* Create employee page */
 .create-employee {
@@ -25,7 +25,7 @@ $createEmployeeLink: #4B7BFF;
     }
 
     &__link {
-        color: $createEmployeeButtonSubmitBackground;
+        color: $createEmployeeLinkColor;
         margin-bottom: 20px;
     }
 
