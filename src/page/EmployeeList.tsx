@@ -23,29 +23,33 @@ export default function EmployeeList () {
             </table> */}
 
             <table className="employee-list__table">
-                <tr className="employee-list__table__row-header">
-                    <th className="employee-list__table__row-header__header">First Name</th>
-                    <th className="employee-list__table__row-header__header">Last Name</th>
-                    <th className="employee-list__table__row-header__header">Start Date</th>
-                    <th className="employee-list__table__row-header__header">Department</th>
-                    <th className="employee-list__table__row-header__header">Date od Birth</th>
-                    <th className="employee-list__table__row-header__header">Street</th>
-                    <th className="employee-list__table__row-header__header">City</th>
-                    <th className="employee-list__table__row-header__header">State</th>
-                    <th className="employee-list__table__row-header__header">Zip code</th>
-                </tr>
+                <thead>
+                    <tr className="employee-list__table__row-header">
+                        <th className="employee-list__table__row-header__header">First Name</th>
+                        <th className="employee-list__table__row-header__header">Last Name</th>
+                        <th className="employee-list__table__row-header__header">Start Date</th>
+                        <th className="employee-list__table__row-header__header">Department</th>
+                        <th className="employee-list__table__row-header__header">Date od Birth</th>
+                        <th className="employee-list__table__row-header__header">Street</th>
+                        <th className="employee-list__table__row-header__header">City</th>
+                        <th className="employee-list__table__row-header__header">State</th>
+                        <th className="employee-list__table__row-header__header">Zip code</th>
+                    </tr>
+                </thead>
 
-                <tr className="employee-list__table__row-data">
-                    <td className="employee-list__table__row-data__data">Data</td>
-                    <td className="employee-list__table__row-data__data">2</td>
-                    <td className="employee-list__table__row-data__data">Test 2</td>
-                    <td className="employee-list__table__row-data__data">Test 2</td>
-                    <td className="employee-list__table__row-data__data">Data</td>
-                    <td className="employee-list__table__row-data__data">Data</td>
-                    <td className="employee-list__table__row-data__data">Data</td>
-                    <td className="employee-list__table__row-data__data">Data</td>
-                    <td className="employee-list__table__row-data__data">Data</td>
-                </tr>
+                <tbody>
+                    <tr className="employee-list__table__row-data">
+                        <td className="employee-list__table__row-data__data">Data</td>
+                        <td className="employee-list__table__row-data__data">2</td>
+                        <td className="employee-list__table__row-data__data">Test 2</td>
+                        <td className="employee-list__table__row-data__data">Test 2</td>
+                        <td className="employee-list__table__row-data__data">Data</td>
+                        <td className="employee-list__table__row-data__data">Data</td>
+                        <td className="employee-list__table__row-data__data">Data</td>
+                        <td className="employee-list__table__row-data__data">Data</td>
+                        <td className="employee-list__table__row-data__data">Data</td>
+                    </tr>
+                </tbody>
             </table>
         </section>
     );

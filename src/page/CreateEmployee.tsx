@@ -17,11 +17,11 @@ const dateInformations = {
     startId: 'startDate'
 }
 
-// function handleSubmit (event) {
-//     event.preventDefault();
-//     const infoUser = new FormData(event.target);
-//     console.log(infoUser.get("select-state"));
-// }
+function handleSubmit (event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const infoUser = new FormData(event.target as HTMLFormElement);
+    console.log(infoUser.get("select-state"));
+}
 
 export default function CreateEmployee () {
     return (
@@ -36,7 +36,7 @@ export default function CreateEmployee () {
                 Create Employee
             </h2>
 
-            <form className="create-employee__form">
+            <form onSubmit={handleSubmit}className="create-employee__form">
                 <label htmlFor="firstname" className="create-employee-label">
                     First Name
                 </label>
