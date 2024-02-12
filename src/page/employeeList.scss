@@ -1,5 +1,4 @@
 /* Variables */
-$employeeListBackground: #2C2C2C;
 $employeeListColor: #FFFFFF;
 $employeeListLinkColor: #4B7BFF;
 
@@ -10,29 +9,33 @@ $employeeListLinkColor: #4B7BFF;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 20px 0 20px 0;
-    background-color: $employeeListBackground;
+    height: 100vh;
     color: $employeeListColor;
 
     &__link {
+        margin: 20px 0 20px 0;
         color: $employeeListLinkColor;
     }
 
-    &__user {
-        margin-top: 50px;
-        border: 2px solid purple;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+    &__table {
+        background-color: orange;
 
-        &__title {
-            width: 100%;
-            text-align: center;
+        &__row-header {
+            background-color: #676767;
+
+            &__header {
+                padding: 10px;
+                min-width: 100px;
+            }
         }
 
-        &__info-user {
-            width: 300px;
-            height: 300px;
-            border: 2px solid orange;
+        &__row-data {
+            background-color: #3a3939;
+
+            &__data {
+                padding: 10px;
+                text-align: center;
+            }
         }
     }
 }

@@ -7,6 +7,10 @@
     font-style: normal;
 }
 
+/* Variables */
+
+$bodyBackground: #2C2C2C;
+
 /* - General rules - */
 * {
     margin: 0;
@@ -15,6 +19,7 @@
 
 body {
     font-family: 'Roboto';
+    background-color: $bodyBackground;
 }
 
 h1 {
