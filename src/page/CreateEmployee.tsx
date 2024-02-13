@@ -30,13 +30,11 @@ const dateInformations = {
 // For CustomizedModal (props)
 const closeButtonTextData = {
     closeButtonTextValue: 'Close',
-    textNotificationValue: 'Notification message',
+    textNotificationValue: 'A user has been created!',
     confirmationTextValue: 'Understood'
 };
 
 export default function CreateEmployee () {
-
-    
     const [modal, setModal] = useState<boolean>(false);
     const dispatch = useDispatch();
     const tableInfo = useSelector((state: {
@@ -72,7 +70,6 @@ export default function CreateEmployee () {
         const selectState = infoUser.get("select-state");
         const zipCode = infoUser.get("zip-code");
         const selectDepartment = infoUser.get("select-department");
-        console.log(startDate)
 
         // Change format date
         if (startDate !== 'Invalid Date') {
