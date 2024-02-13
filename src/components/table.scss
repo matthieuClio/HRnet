@@ -1,0 +1,22 @@
+.table {
+    display: block;
+    background-color: orange;
+
+    &__row-header {
+        background-color: #676767;
+
+        &__header {
+            padding: 10px;
+            min-width: 100px;
+        }
+    }
+
+    &__row-data {
+        background-color: #3a3939;
+
+        &__data {
+            padding: 10px;
+            text-align: center;
+        }
+    }
+}

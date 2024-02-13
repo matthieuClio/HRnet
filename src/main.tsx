@@ -2,12 +2,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+// Redux
+import { Provider } from 'react-redux';
+
 // React router
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
 // Page component
 import CreateEmployee from './page/CreateEmployee';
 import EmployeeList from './page/EmployeeList';
+
+// Scripts
+import { store } from './scripts/reduxToolkit/store';
 
 // Style
 import './main.scss';
@@ -27,6 +33,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>,
 );

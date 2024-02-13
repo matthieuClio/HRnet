@@ -1,12 +1,12 @@
 // Style
 import './dateInput.scss';
 
-export default function DateInput (props: { idInput: string }) {
-    const { idInput } = props;
+export default function DateInput (props: { name: string, idInput: string }) {
+    const { name, idInput } = props;
 
     return (
         <>
-            <input type="date" id={idInput} className="date-input" />
+            <input type="date" name={name} id={idInput} className="date-input" />
         </>
     );
 }
