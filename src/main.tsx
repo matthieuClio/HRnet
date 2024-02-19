@@ -11,6 +11,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 // Page component
 import CreateEmployee from './page/CreateEmployee';
 import EmployeeList from './page/EmployeeList';
+import Error from './page/Error';
 
 // Scripts
 import { store } from './scripts/reduxToolkit/store';
@@ -23,7 +24,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <CreateEmployee />,
-    errorElement: 'Error !',
+    errorElement: <Error />,
   },
   {
     path: '/list',

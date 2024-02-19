@@ -24,25 +24,11 @@ export default function Table () {
         }[];
     }) => state.tableData);
 
+    // Make table manipulation easier
     const [userInfo] = useState(tableInfo);
-
-    // function handleChange (event: React.ChangeEvent<HTMLInputElement>) {
-    //     // console.log(tableInfo.includes('o'));
-    //     // console.log(event.target.value);
-
-    //     // let testt = [...userInfo];
-    //     // testt.push(userInfo[0])
-    //     // setUserInfo(testt);
-    //     // console.log(userInfo)
-    // }
 
     return (
         <>
-            {/* <div>
-                <label htmlFor="search">Search : </label>
-                <input type="search" onChange={handleChange} />
-            </div> */}
-
             <table className="table">
                 <thead>
                     <tr className="table__row-header">
