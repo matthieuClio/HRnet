@@ -1,6 +1,12 @@
+// Variables
+$tableBackground: #4d4d4d;
+$tableRowHeaderBackground: #676767;
+$tableRowDataBackground: #3a3939;
+
 .table {
     display: block;
-    background-color: orange;
+    background-color: $tableBackground;
+    border-radius: 5px;
 
     &__row-header {
         background-color: #676767;
@@ -12,7 +18,7 @@
     }
 
     &__row-data {
-        background-color: #3a3939;
+        background-color: $tableRowDataBackground;
 
         &__data {
             padding: 10px;

@@ -10,7 +10,7 @@ import { useSelector, useDispatch } from 'react-redux';
 // Component
 import DateInput from '../components/DateInput';
 import SelectOption from '../components/SelectOption';
-import CustomizedModal from '../components/modal/CustomizedModal';
+import { CustomizedModal } from '@makabay/customizedmodal';
 
 // Scripts
 import { selectStateData, selectDepartmentData } from '../scripts/selectData';

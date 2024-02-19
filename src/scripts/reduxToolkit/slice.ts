@@ -11,7 +11,7 @@ const initialState = [
         street: "",
         city: "",
         state: "",
-        zipCode: 0,
+        zipCode: null,
         firstAdd: true
     }
 ];
